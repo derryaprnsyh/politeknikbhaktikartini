@@ -1,0 +1,428 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* =========================
+   HERO
+========================= */
+.kampus-hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #2563eb,
+        #0ea5e9
+    );
+}
+
+.kampus-hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-150px;
+    left:-100px;
+}
+
+.kampus-hero::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(255,255,255,.06);
+    border-radius:50%;
+    bottom:-150px;
+    right:-100px;
+}
+
+.hero-container{
+    max-width:900px;
+    padding:30px;
+    position:relative;
+    z-index:2;
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 25px;
+    background:rgba(255,255,255,.15);
+    color:#fff;
+    border-radius:50px;
+    margin-bottom:25px;
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.hero-container h1{
+    color:#fff;
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero-container p{
+    color:#e5e7eb;
+    line-height:1.9;
+    font-size:1.1rem;
+}
+
+/* =========================
+   SECTION GLOBAL
+========================= */
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#0f172a;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.section-desc{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#64748b;
+    margin-bottom:50px;
+}
+
+/* =========================
+   CONTENT CARD
+========================= */
+.content-card{
+    background:#fff;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.content-card h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.content-card p{
+    line-height:1.9;
+    margin-bottom:15px;
+    color:#555;
+}
+
+/* =========================
+   VISI MISI
+========================= */
+.visi-misi-section{
+    background:#eef4ff;
+}
+
+.visi-misi-section .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.visi-box,
+.misi-box{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.visi-box:hover,
+.misi-box:hover{
+    transform:translateY(-10px);
+}
+
+.visi-box h2,
+.misi-box h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.misi-box ul{
+    padding-left:20px;
+}
+
+.misi-box li{
+    margin-bottom:12px;
+    line-height:1.7;
+}
+
+/* =========================
+   NILAI
+========================= */
+.nilai-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.nilai-card{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.nilai-card:hover{
+    transform:translateY(-12px);
+}
+
+.nilai-card i{
+    font-size:3rem;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.nilai-card h3{
+    margin-bottom:15px;
+}
+
+/* =========================
+   PRODI
+========================= */
+.prodi-section{
+    background:#f8fafc;
+}
+
+.prodi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.prodi-card{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.prodi-card:hover{
+    transform:translateY(-10px);
+}
+
+.prodi-card i{
+    font-size:3.5rem;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.prodi-card h3{
+    margin-bottom:15px;
+}
+
+/* =========================
+   FASILITAS
+========================= */
+.fasilitas-section{
+    background:white;
+}
+
+.fasilitas-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.fasilitas-card{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #0ea5e9
+    );
+    color:white;
+    text-align:center;
+    padding:35px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.fasilitas-card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.fasilitas-card i{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.fasilitas-card h3{
+    font-size:1.1rem;
+}
+
+/* =========================
+   KEGIATAN
+========================= */
+.kegiatan-section{
+    background:#f8fafc;
+}
+
+.kegiatan-section p{
+    max-width:900px;
+    margin:15px auto;
+    text-align:center;
+    line-height:1.9;
+    color:#555;
+}
+
+/* =========================
+   KERJASAMA
+========================= */
+.kerjasama-section{
+    background:linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+    text-align:center;
+}
+
+.kerjasama-section .section-title{
+    color:white;
+}
+
+.kerjasama-section p{
+    color:#dbeafe;
+    max-width:900px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* =========================
+   CLOSING
+========================= */
+.closing-section{
+    background:#0f172a;
+    text-align:center;
+}
+
+.closing-section h2{
+    color:white;
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.closing-section p{
+    color:#cbd5e1;
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+}
+
+/* =========================
+   ANIMASI
+========================= */
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.nilai-card,
+.prodi-card,
+.fasilitas-card{
+    animation:float 5s ease-in-out infinite;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:992px){
+
+    .hero-container h1{
+        font-size:3rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .kampus-hero{
+        min-height:80vh;
+    }
+
+    .hero-container h1{
+        font-size:2.3rem;
+    }
+
+    .hero-container p{
+        font-size:.95rem;
+    }
+
+    .content-card,
+    .visi-box,
+    .misi-box{
+        padding:25px;
+    }
+
+    section{
+        padding:70px 0;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero-container h1{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:1.7rem;
+    }
+
+    .badge{
+        font-size:.8rem;
+    }
+}

@@ -1,0 +1,121 @@
+
+.trm-page {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7ff;
+    color: #1f2a44;
+}
+
+/* ================= HERO ================= */
+.trm-page .hero {
+    height: 60vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.trm-page .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.trm-page .hero-slider {
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.trm-page .hero-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.trm-page .hero-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ================= CONTENT ================= */
+.trm-page .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.trm-page .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+/* ================= CARD ================= */
+.trm-page .card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.trm-page .card:hover {
+    transform: translateY(-5px);
+}
+
+.trm-page .card h2 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+/* highlight */
+.trm-page .highlight {
+    border-left: 6px solid #3b82f6;
+}
+
+/* ================= LIST ================= */
+.trm-page ul {
+    padding-left: 20px;
+}
+
+.trm-page ul li {
+    margin-bottom: 8px;
+}
+
+/* ================= GALLERY ================= */
+.trm-page .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.trm-page .gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.trm-page .gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .trm-page .hero-content h2 {
+        font-size: 26px;
+    }
+
+    .trm-page .hero-content p {
+        font-size: 14px;
+    }
+
+    .trm-page .section-title {
+        font-size: 22px;
+    }
+}

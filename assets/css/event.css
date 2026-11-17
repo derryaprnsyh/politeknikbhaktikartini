@@ -1,0 +1,456 @@
+
+/* ==================================================
+   GOOGLE FONT
+================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==================================================
+   RESET
+================================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ==================================================
+   CONTAINER
+================================================== */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==================================================
+   HERO VIDEO
+================================================== */
+.event-hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:20px;
+    text-shadow:0 5px 20px rgba(0,0,0,.5);
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+/* ==================================================
+   STATISTIK
+================================================== */
+.stats-section{
+    margin-top:-80px;
+    position:relative;
+    z-index:10;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.stat-box{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+}
+
+.stat-box i{
+    font-size:3rem;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.stat-box h2{
+    font-size:2rem;
+    color:#0f172a;
+}
+
+.stat-box p{
+    color:#64748b;
+}
+
+/* ==================================================
+   EVENT PAGE
+================================================== */
+.event-page{
+    padding:80px 0;
+}
+
+.page-title{
+    text-align:center;
+    font-size:3rem;
+    color:#0f172a;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.page-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:#2563eb;
+    display:block;
+    margin:15px auto;
+    border-radius:30px;
+}
+
+.intro{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    color:#64748b;
+    margin-bottom:60px;
+    line-height:1.9;
+}
+
+/* ==================================================
+   EVENT CARD
+================================================== */
+.event-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    margin-bottom:40px;
+    display:grid;
+    grid-template-columns:350px 1fr;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.event-card:hover{
+    transform:translateY(-8px);
+}
+
+.event-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.event-content{
+    padding:35px;
+}
+
+.event-content h2{
+    color:#1e3a8a;
+    margin-bottom:15px;
+    font-size:1.8rem;
+}
+
+.event-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* ==================================================
+   SECTION TITLE
+================================================== */
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#0f172a;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.section-title::after{
+    content:'';
+    display:block;
+    width:100px;
+    height:5px;
+    background:#2563eb;
+    margin:15px auto;
+    border-radius:20px;
+}
+
+/* ==================================================
+   EVENT MENDATANG
+================================================== */
+.upcoming-event{
+    padding:90px 0;
+    background:white;
+}
+
+.upcoming-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.upcoming-card{
+    background:#f8fafc;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    border-top:5px solid #2563eb;
+}
+
+.upcoming-card:hover{
+    transform:translateY(-8px);
+}
+
+.upcoming-card .date{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-size:.9rem;
+}
+
+.upcoming-card h3{
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.upcoming-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* ==================================================
+   GALERI
+================================================== */
+.gallery{
+    padding:90px 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* ==================================================
+   CTA
+================================================== */
+.cta-section{
+    padding:100px 0;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    text-align:center;
+    color:white;
+}
+
+.cta-section h2{
+    font-size:2.8rem;
+    margin-bottom:20px;
+}
+
+.cta-section p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.btn-event{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    padding:15px 40px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn-event:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(255,255,255,.3);
+}
+
+/* ==================================================
+   ANIMATION
+================================================== */
+.event-card,
+.stat-box,
+.upcoming-card,
+.gallery-grid img{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==================================================
+   SCROLLBAR
+================================================== */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e2e8f0;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#1e40af;
+}
+
+/* ==================================================
+   RESPONSIVE TABLET
+================================================== */
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .event-card{
+        grid-template-columns:1fr;
+    }
+
+    .event-card img{
+        height:280px;
+    }
+
+}
+
+/* ==================================================
+   RESPONSIVE MOBILE
+================================================== */
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .page-title{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .event-content{
+        padding:25px;
+    }
+
+    .event-content h2{
+        font-size:1.4rem;
+    }
+
+    .cta-section h2{
+        font-size:2rem;
+    }
+
+}
+
+/* ==================================================
+   RESPONSIVE SMALL MOBILE
+================================================== */
+@media(max-width:480px){
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .stat-box{
+        padding:25px;
+    }
+
+    .event-content{
+        padding:20px;
+    }
+
+    .event-content h2{
+        font-size:1.2rem;
+    }
+
+    .cta-section h2{
+        font-size:1.5rem;
+    }
+
+}
+

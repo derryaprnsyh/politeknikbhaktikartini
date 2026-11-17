@@ -1,0 +1,1027 @@
+/* ===================== GOOGLE FONT ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===================== RESET ===================== */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#f5f7fb;color:#333;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+.container{width:90%;max-width:1200px;margin:auto}
+
+/* ===================== DARK MODE ===================== */
+body.dark-mode{background:#111827;color:#fff}
+body.dark-mode section{background:#111827}
+body.dark-mode .stat-card,
+body.dark-mode .about-content,
+body.dark-mode .about-image{
+    background:#1f2937;
+    color:#fff;
+}
+
+/* ===================== BUTTON DARK MODE ===================== */
+#theme-toggle{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    cursor:pointer;
+    font-size:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    z-index:999;
+    transition:.3s;
+}
+#theme-toggle:hover{
+    transform:rotate(180deg);
+    background:#084298;
+}
+
+/* ===================== HERO ===================== */
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+    color:#fff;
+    max-width:850px;
+    z-index:2;
+}
+
+.hero-subtitle{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    font-weight:800;
+    margin-bottom:20px;
+    text-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.hero-content p{
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+.hero-button{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#084298;
+    transform:translateY(-5px);
+}
+
+.btn-outline{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#0d6efd;
+}
+
+/* ===================== STATISTIK ===================== */
+.statistik{
+    margin-top:-80px;
+    position:relative;
+    z-index:5;
+}
+
+.statistik .container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+}
+
+.stat-card i{
+    font-size:45px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.stat-card h2{
+    font-size:34px;
+    color:#0d6efd;
+}
+
+.stat-card span{
+    color:#777;
+}
+
+/* ===================== ABOUT ===================== */
+.about{
+    padding:100px 0;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image img{
+    border-radius:20px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.section-subtitle{
+    display:inline-block;
+    color:#0d6efd;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.about-content h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    margin-bottom:18px;
+    color:#666;
+}
+
+.about-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:30px 0;
+}
+
+.about-list div{
+    background:#fff;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.about-list i{
+    color:#0d6efd;
+    margin-right:8px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:992px){
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.statistik .container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:90vh;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:17px;
+}
+
+.hero-button{
+    flex-direction:column;
+}
+
+.btn{
+    width:100%;
+}
+
+.statistik .container{
+    grid-template-columns:1fr;
+}
+
+.about-list{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-subtitle{
+    font-size:13px;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.about-content h2{
+    font-size:30px;
+}
+
+}
+
+/* ===================== SECTION ===================== */
+section{padding:90px 0}
+.section-header{text-align:center;margin-bottom:60px}
+.section-header span{
+    display:inline-block;
+    color:#0d6efd;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+.section-header h2{
+    font-size:40px;
+    color:#222;
+    margin-bottom:15px;
+}
+body.dark-mode .section-header h2{color:#fff;}
+
+/* ===================== DIREKTUR ===================== */
+.direktur{
+    background:#f8f9fc;
+}
+.direktur-grid{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:50px;
+    align-items:center;
+}
+.direktur-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+.direktur-content{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+body.dark-mode .direktur-content{
+    background:#1f2937;
+}
+.direktur-content h2{
+    font-size:34px;
+    margin:15px 0;
+}
+.direktur-content p{
+    color:#666;
+    margin-bottom:20px;
+}
+body.dark-mode .direktur-content p{
+    color:#ddd;
+}
+.direktur-content h4{
+    color:#0d6efd;
+    margin-top:20px;
+}
+
+/* ===================== VISI MISI ===================== */
+.vm-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+.vm-card{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.vm-card:hover{
+    transform:translateY(-10px);
+}
+body.dark-mode .vm-card{
+    background:#1f2937;
+}
+.vm-card i{
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    font-size:34px;
+    margin-bottom:20px;
+}
+.vm-card h3{
+    margin-bottom:20px;
+    color:#0d6efd;
+}
+.vm-card p,
+.vm-card li{
+    color:#666;
+}
+.vm-card ul{
+    list-style:none;
+}
+.vm-card li{
+    padding:8px 0;
+}
+body.dark-mode .vm-card p,
+body.dark-mode .vm-card li{
+    color:#ddd;
+}
+
+/* ===================== PROGRAM STUDI ===================== */
+.prodi{
+    background:#f8f9fc;
+}
+.prodi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+.prodi-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.prodi-card:hover{
+    transform:translateY(-10px);
+}
+body.dark-mode .prodi-card{
+    background:#1f2937;
+}
+.prodi-card i{
+    font-size:50px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+.prodi-card h3{
+    margin-bottom:15px;
+}
+.prodi-card p{
+    color:#666;
+    margin-bottom:20px;
+}
+body.dark-mode .prodi-card p{
+    color:#ddd;
+}
+.prodi-card a{
+    display:inline-block;
+    padding:10px 22px;
+    background:#0d6efd;
+    color:#fff;
+    border-radius:30px;
+    transition:.3s;
+}
+.prodi-card a:hover{
+    background:#084298;
+}
+
+/* ===================== KEUNGGULAN ===================== */
+.keunggulan-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.keunggulan-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.keunggulan-card:hover{
+    transform:translateY(-10px);
+}
+body.dark-mode .keunggulan-card{
+    background:#1f2937;
+}
+.keunggulan-card i{
+    width:75px;
+    height:75px;
+    line-height:75px;
+    border-radius:50%;
+    background:#0d6efd;
+    color:#fff;
+    font-size:30px;
+    margin-bottom:20px;
+}
+.keunggulan-card h3{
+    margin-bottom:15px;
+}
+.keunggulan-card p{
+    color:#666;
+}
+body.dark-mode .keunggulan-card p{
+    color:#ddd;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:992px){
+    .direktur-grid,
+    .vm-grid{
+        grid-template-columns:1fr;
+    }
+
+    .direktur-image{
+        max-width:350px;
+        margin:auto;
+    }
+
+    .section-header h2{
+        font-size:32px;
+    }
+}
+
+@media(max-width:768px){
+    .direktur-content,
+    .vm-card,
+    .prodi-card,
+    .keunggulan-card{
+        padding:25px;
+    }
+
+    .section-header h2{
+        font-size:28px;
+    }
+
+    .direktur-content h2{
+        font-size:28px;
+    }
+}
+
+/*===================== HISTORY =====================*/
+.history{background:#f5f7fb}
+.history-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.history-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    position:relative;
+    transition:.3s;
+}
+.history-card:hover{
+    transform:translateY(-10px);
+}
+.history-card span{
+    display:inline-block;
+    padding:10px 25px;
+    background:#0d6efd;
+    color:#fff;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+.history-card h3{
+    margin-bottom:15px;
+    color:#0d6efd;
+}
+.history-card p{
+    color:#666;
+}
+body.dark-mode .history-card{
+    background:#1f2937;
+}
+body.dark-mode .history-card p{
+    color:#ddd;
+}
+
+/*===================== AKREDITASI =====================*/
+.akreditasi{
+    background:linear-gradient(135deg,#0d6efd,#084298);
+    color:#fff;
+}
+.akreditasi-box{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+.akreditasi-box i{
+    font-size:70px;
+    margin-bottom:20px;
+}
+.akreditasi-box h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+.nilai{
+    display:inline-block;
+    width:120px;
+    height:120px;
+    line-height:120px;
+    border-radius:50%;
+    background:#fff;
+    color:#0d6efd;
+    font-size:55px;
+    font-weight:bold;
+    margin:25px 0;
+}
+.akreditasi-box p{
+    max-width:650px;
+    margin:auto;
+    opacity:.9;
+}
+
+/*===================== FASILITAS =====================*/
+.fasilitas-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+.fasilitas-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.fasilitas-card:hover{
+    transform:translateY(-8px);
+}
+.fasilitas-card i{
+    font-size:45px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+.fasilitas-card h3{
+    font-size:20px;
+}
+body.dark-mode .fasilitas-card{
+    background:#1f2937;
+}
+
+/*===================== GALERI =====================*/
+.gallery{
+    background:#f5f7fb;
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.gallery-grid img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+}
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/*===================== MITRA =====================*/
+.partner-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:25px;
+    align-items:center;
+}
+.partner-grid img{
+    width:100%;
+    padding:20px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.partner-grid img:hover{
+    transform:translateY(-8px);
+}
+body.dark-mode .partner-grid img{
+    background:#1f2937;
+}
+
+/*===================== TESTIMONI =====================*/
+.testimonial{
+    background:#f5f7fb;
+}
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.testimonial-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+.testimonial-card p{
+    color:#666;
+    margin-bottom:25px;
+    font-style:italic;
+}
+.testimonial-card h4{
+    color:#0d6efd;
+}
+.testimonial-card span{
+    color:#888;
+    font-size:14px;
+}
+body.dark-mode .testimonial-card{
+    background:#1f2937;
+}
+body.dark-mode .testimonial-card p,
+body.dark-mode .testimonial-card span{
+    color:#ddd;
+}
+
+/*===================== CTA =====================*/
+.cta{
+    background:linear-gradient(135deg,#0d6efd,#084298);
+    color:#fff;
+    text-align:center;
+}
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+.cta p{
+    max-width:700px;
+    margin:0 auto 35px;
+}
+.cta .btn-primary{
+    background:#fff;
+    color:#0d6efd;
+}
+.cta .btn-primary:hover{
+    background:#f5f5f5;
+}
+
+/*===================== ANIMATION =====================*/
+.stat-card,
+.prodi-card,
+.keunggulan-card,
+.vm-card,
+.history-card,
+.fasilitas-card,
+.testimonial-card{
+    transition:.35s;
+}
+.stat-card:hover,
+.prodi-card:hover,
+.keunggulan-card:hover,
+.vm-card:hover,
+.history-card:hover,
+.fasilitas-card:hover,
+.testimonial-card:hover{
+    box-shadow:0 25px 45px rgba(13,110,253,.15);
+}
+
+/*===================== RESPONSIVE =====================*/
+@media(max-width:992px){
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .partner-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+    .gallery-grid,
+    .partner-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .cta h2{
+        font-size:30px;
+    }
+    .nilai{
+        width:90px;
+        height:90px;
+        line-height:90px;
+        font-size:40px;
+    }
+}
+
+@media(max-width:576px){
+    .gallery-grid,
+    .partner-grid{
+        grid-template-columns:1fr;
+    }
+    .history-grid,
+    .fasilitas-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ===========================
+   KEUNGGULAN
+=========================== */
+
+.keunggulan{
+    padding:100px 0;
+    background:linear-gradient(135deg,#f8fbff,#eef5ff);
+    position:relative;
+    overflow:hidden;
+}
+
+.keunggulan::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:rgba(13,110,253,0.08);
+    border-radius:50%;
+    top:-180px;
+    left:-150px;
+}
+
+.keunggulan::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:rgba(25,135,84,0.06);
+    border-radius:50%;
+    bottom:-150px;
+    right:-120px;
+}
+
+.keunggulan .container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+/* ===========================
+   JUDUL
+=========================== */
+
+.section-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-header span{
+    display:inline-block;
+    padding:8px 22px;
+    background:#0d6efd;
+    color:#fff;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:18px;
+    box-shadow:0 10px 25px rgba(13,110,253,.25);
+}
+
+.section-header h2{
+    font-size:40px;
+    color:#1d3557;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.section-header p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.unggulan-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.unggulan-card{
+    background:#fff;
+    border-radius:20px;
+    padding:40px 30px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.unggulan-card::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#0d6efd,#00b4ff);
+    left:0;
+    top:0;
+}
+
+.unggulan-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 45px rgba(13,110,253,.18);
+}
+
+/* ===========================
+   ICON
+=========================== */
+
+.unggulan-card i{
+    width:85px;
+    height:85px;
+    line-height:85px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#0d6efd,#3da5ff);
+    color:#fff;
+    font-size:35px;
+    margin-bottom:25px;
+    transition:.4s;
+    box-shadow:0 12px 25px rgba(13,110,253,.35);
+}
+
+.unggulan-card:hover i{
+    transform:rotate(12deg) scale(1.12);
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.unggulan-card h3{
+    font-size:24px;
+    color:#1d3557;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.unggulan-card p{
+    color:#666;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* ===========================
+   HOVER BACKGROUND
+=========================== */
+
+.unggulan-card::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    border-radius:50%;
+    background:rgba(13,110,253,.05);
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition:.6s;
+    z-index:0;
+}
+
+.unggulan-card:hover::after{
+    width:420px;
+    height:420px;
+}
+
+.unggulan-card>*{
+    position:relative;
+    z-index:2;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .keunggulan{
+        padding:80px 0;
+    }
+
+    .section-header h2{
+        font-size:32px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .keunggulan{
+        padding:70px 0;
+    }
+
+    .section-header h2{
+        font-size:28px;
+    }
+
+    .unggulan-card{
+        padding:35px 25px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .section-header h2{
+        font-size:24px;
+    }
+
+    .unggulan-card{
+        padding:30px 20px;
+    }
+
+    .unggulan-card i{
+        width:75px;
+        height:75px;
+        line-height:75px;
+        font-size:30px;
+    }
+
+}

@@ -1,0 +1,359 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+.visi-hero{
+    position:relative;
+    width:100%;
+    height:70vh;
+    background:url('../img/kampus-banner.jpg') center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.visi-hero .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    color:#fff;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:20px;
+    text-shadow:0 4px 15px rgba(0,0,0,.4);
+}
+
+.hero-content p{
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+.section-title{
+    text-align:center;
+    font-size:2.7rem;
+    font-weight:700;
+    color:#0f172a;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:#2563eb;
+    display:block;
+    margin:15px auto;
+    border-radius:30px;
+}
+
+/* ==========================================
+   VISI MISI
+========================================== */
+.visi-misi{
+    padding:100px 0;
+}
+
+.visi-box{
+    background:#fff;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    text-align:center;
+    margin-bottom:70px;
+    animation:fadeUp 1s ease;
+}
+
+.visi-box i{
+    font-size:4rem;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.visi-box p{
+    font-size:1rem;
+    line-height:2;
+    text-align:justify;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   MISI GRID
+========================================== */
+.misi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.misi-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+    border-top:5px solid #2563eb;
+}
+
+.misi-card:hover{
+    transform:translateY(-10px);
+}
+
+.misi-card h3{
+    width:60px;
+    height:60px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+    font-size:1.5rem;
+}
+
+.misi-card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* ==========================================
+   NILAI KAMPUS
+========================================== */
+.nilai-kampus{
+    padding:100px 0;
+    background:#fff;
+}
+
+.nilai-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.nilai-card{
+    background:#f8fafc;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.nilai-card:hover{
+    transform:translateY(-10px);
+}
+
+.nilai-card i{
+    font-size:3rem;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.nilai-card h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.nilai-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* ==========================================
+   CTA SECTION
+========================================== */
+.cta-section{
+    padding:100px 0;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1e40af
+    );
+    text-align:center;
+    color:#fff;
+}
+
+.cta-section h2{
+    font-size:2.8rem;
+    margin-bottom:20px;
+}
+
+.cta-section p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.btn-visi{
+    display:inline-block;
+    text-decoration:none;
+    padding:15px 40px;
+    background:#fff;
+    color:#2563eb;
+    font-weight:600;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn-visi:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(255,255,255,.3);
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.misi-card,
+.nilai-card{
+    animation:fadeUp .8s ease;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e2e8f0;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#1e40af;
+}
+
+/* ==========================================
+   RESPONSIVE TABLET
+========================================== */
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .section-title{
+        font-size:2.2rem;
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE
+========================================== */
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .visi-box{
+        padding:30px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .cta-section h2{
+        font-size:2rem;
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+@media(max-width:480px){
+
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .section-title{
+        font-size:1.6rem;
+    }
+
+    .misi-card,
+    .nilai-card{
+        padding:25px;
+    }
+
+}
+

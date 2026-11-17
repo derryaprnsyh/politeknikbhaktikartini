@@ -1,0 +1,346 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f6f8fc;
+    overflow-x: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* logo image only */
+.logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+
+    /* clean shadow tanpa background */
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+
+    /* animasi ringan */
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+/* logo text */
+.logo h1 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1f2a44;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo span {
+    color: #4f46e5;
+}
+
+/* animation */
+@keyframes logoFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0); }
+}
+
+/* =========================
+   NAV MENU
+========================= */
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* menu item */
+.menu li {
+    position: relative;
+}
+
+/* link */
+.menu a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+/* hover effect */
+.menu a:hover {
+    background: rgba(79,70,229,0.1);
+    color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+.dropdown-menu {
+    position: absolute;
+    top: 120%;
+    left: 0;
+
+    background: #fff;
+    min-width: 220px;
+
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.2s ease;
+}
+
+/* show dropdown */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* dropdown item */
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 14px;
+}
+
+.dropdown-menu li a:hover {
+    background: #f3f4ff;
+    padding-left: 18px;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+.nav-login {
+    background: linear-gradient(135deg,#4f46e5,#7c3aed);
+    color: white !important;
+
+    padding: 8px 14px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 20px rgba(79,70,229,0.25);
+}
+
+.nav-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(79,70,229,0.35);
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+
+        flex-direction: column;
+        background: white;
+
+        padding: 20px;
+
+        display: none;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+
+/* HILANGKAN BULLET DI SEMUA MENU */
+.menu,
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* pastikan item juga tidak bawa marker */
+.menu li,
+.dropdown-menu li {
+    list-style: none;
+}
+
+/* safety untuk browser tertentu */
+.dropdown-menu li::marker {
+    content: "";
+}
+
+
+/*CSS FOOTER*/
+
+/* =========================
+   FOOTER BASE
+========================= */
+.footer {
+    background: #1f2a44;
+    color: #ffffff;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+/* container flex layout */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   FOOTER LEFT
+========================= */
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-left h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 6px;
+}
+
+/* =========================
+   FOOTER CENTER
+========================= */
+.footer-center {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-center p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 6px;
+}
+
+/* =========================
+   FOOTER RIGHT (SOCIAL)
+========================= */
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 16px;
+
+    transition: 0.25s ease;
+}
+
+/* hover effect */
+.social a:hover {
+    background: #4f46e5;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(79,70,229,0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    .footer-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}

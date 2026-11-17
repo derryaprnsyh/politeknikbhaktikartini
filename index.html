@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Beranda - Politeknik Bhakti Kartini</title>
+<link href="/politeknikbhaktikartini/assets/css/header.css" rel="stylesheet"/>
+<link href="/politeknikbhaktikartini/assets/css/index.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet"/>
+<style>
+.mobile-menu-toggle{display:none;border:0;background:#4f46e5;color:#fff;padding:9px 12px;border-radius:8px;font-weight:600;cursor:pointer}
+@media(max-width:768px){.mobile-menu-toggle{display:block} header .header-flex{flex-wrap:wrap} header nav{width:100%} header nav .menu{display:none;position:static;width:100%;padding:12px;background:#fff;flex-direction:column;align-items:stretch} header nav .menu.active{display:flex} header nav .menu li{width:100%} header nav .menu a{display:block} header nav .dropdown-menu{position:static;display:block;opacity:1;visibility:visible;transform:none;box-shadow:none} .static-form-note{font-size:13px;color:#6b7280;margin-bottom:12px}}
+.static-form-note{font-size:13px;color:#6b7280;margin-bottom:12px}
+.map-link{display:inline-block;padding:14px 20px;background:#0d6efd;color:#fff;border-radius:10px;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<div class="container header-flex">
+<!-- LOGO -->
+<div class="logo">
+<img alt="Logo" class="logo-img" src="/politeknikbhaktikartini/assets/img/logopoltek.png"/>
+<h1>POLITEKNIK <span>BHAKTI KARTINI</span></h1>
+</div>
+<!-- MENU -->
+<button aria-expanded="false" aria-label="Buka menu navigasi" class="mobile-menu-toggle" type="button">☰ Menu</button><nav>
+<ul class="menu">
+<!-- BERANDA -->
+<li>
+<a href="/politeknikbhaktikartini/index.html#home">
+                        Beranda
+                    </a>
+</li>
+<!-- TENTANG -->
+<li>
+<a href="/politeknikbhaktikartini/index.html#tentang">
+                        Tentang Kampus
+                    </a>
+</li>
+<!-- PROGRAM STUDI -->
+<li class="dropdown">
+<a href="/politeknikbhaktikartini/Programstudi/program_studi.html">
+                        Program Studi <i class="fas fa-caret-down"></i>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/politeknikbhaktikartini/Programstudi/trm.html">
+                                Teknik Rekayasa Multimedia (D4)
+                            </a>
+</li>
+<li>
+<a href="/politeknikbhaktikartini/Programstudi/farmasi.html">
+                                Farmasi (D3)
+                            </a>
+</li>
+<li>
+<a href="/politeknikbhaktikartini/Programstudi/ars.html">
+                                Administrasi Rumah Sakit (D3)
+                            </a>
+<li>
+<a href="/politeknikbhaktikartini/Programstudi/logistik.html">
+                                Manajemen Logistik (D3)
+                            </a>
+</li>
+</li></ul>
+</li>
+<!-- EVENT -->
+<li>
+<a href="/politeknikbhaktikartini/event.html#tentang">
+                        Event
+                    </a>
+</li>
+<!-- BLOG -->
+<li class="dropdown">
+<a href="/politeknikbhaktikartini/Blog/blog.html">
+                        Blog <i class="fas fa-caret-down"></i>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/politeknikbhaktikartini/Blog/visi_misi.html">
+                               Visi &amp; Misi
+                            </a>
+</li>
+<li>
+<a href="/politeknikbhaktikartini/Blog/tujuan_kampus.html">
+                               Tujuan Kampus
+                            </a>
+</li>
+<li>
+<a href="/politeknikbhaktikartini/Blog/keunggulan_kampus.html">
+                              Keunggulan Kampus
+                            </a>
+</li>
+</ul>
+</li>
+<!-- KONTAK -->
+<li>
+<a href="/politeknikbhaktikartini/kontak.html">
+                    Kontak
+                </a>
+</li>
+<!-- LOGIN -->
+</ul>
+</nav>
+</div>
+</header>
+<button id="theme-toggle"><i class="fas fa-moon"></i></button>
+<section class="hero" id="home">
+<video autoplay="" class="hero-video" loop="" muted="" playsinline="">
+<source src="/politeknikbhaktikartini/assets/video/videoheader.mp4" type="video/mp4"/>
+</video>
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<span class="hero-subtitle">Selamat Datang di</span>
+<h1>POLITEKNIK BHAKTI KARTINI</h1>
+<p>Kampus vokasi modern yang menghasilkan lulusan profesional, kompeten, inovatif, dan siap menghadapi dunia kerja.</p>
+<div class="hero-button">
+<a class="btn btn-primary" href="/politeknikbhaktikartini/kontak.html">
+<i class="fas fa-user-plus"></i> Daftar Sekarang
+            </a>
+<a class="btn btn-outline" href="#tentang">
+<i class="fas fa-circle-info"></i> Tentang Kampus
+            </a>
+</div>
+</div>
+</section>
+<section class="statistik">
+<div class="container">
+<div class="stat-card">
+<i class="fas fa-user-graduate"></i>
+<h2>2500+</h2>
+<span>Mahasiswa</span>
+</div>
+<div class="stat-card">
+<i class="fas fa-user-tie"></i>
+<h2>120+</h2>
+<span>Dosen</span>
+</div>
+<div class="stat-card">
+<i class="fas fa-building"></i>
+<h2>30+</h2>
+<span>Mitra Industri</span>
+</div>
+<div class="stat-card">
+<i class="fas fa-award"></i>
+<h2>95%</h2>
+<span>Lulusan Bekerja</span>
+</div>
+</div>
+</section>
+ ================= TENTANG ================= 
+<section class="about" id="tentang">
+<div class="container about-grid">
+<div class="about-image">
+<img alt="Politeknik Bhakti Kartini" src="/politeknikbhaktikartini/assets/img/tentangkampus.jpg"/>
+</div>
+<div class="about-content">
+<span class="section-subtitle">Tentang Kampus</span>
+<h2>Politeknik Bhakti Kartini</h2>
+<p>
+                Politeknik Bhakti Kartini merupakan perguruan tinggi vokasi yang berkomitmen mencetak lulusan profesional melalui pendidikan berbasis praktik, teknologi, dan kebutuhan industri.
+            </p>
+<div class="about-list">
+<div><i class="fas fa-circle-check"></i> Pendidikan Berbasis Industri</div>
+<div><i class="fas fa-circle-check"></i> Dosen Profesional &amp; Berpengalaman</div>
+<div><i class="fas fa-circle-check"></i> Laboratorium Lengkap</div>
+<div><i class="fas fa-circle-check"></i> Program Magang Industri</div>
+<div><i class="fas fa-circle-check"></i> Sertifikasi Kompetensi</div>
+<div><i class="fas fa-circle-check"></i> Peluang Kerja Luas</div>
+</div>
+<a class="btn btn-primary" href="/politeknikbhaktikartini/Blog/blog.html">
+                Selengkapnya
+            </a>
+</div>
+</div>
+</section>
+ ================= SAMBUTAN DIREKTUR ================= 
+<section class="direktur">
+<div class="container direktur-grid">
+<div class="direktur-image">
+<img alt="Direktur" src="/politeknikbhaktikartini/assets/img/direktur.png"/>
+</div>
+<div class="direktur-content">
+<span class="section-subtitle">Sambutan Direktur</span>
+<h2>Assalamualaikum, Wr. Wb.</h2>
+<p>
+                Mewakili Segenap Jajaran Pimpinan dan Civitas Akademika Politeknik Bhakti Kartini Bekasi, dengan ini Saya mengucapkan Selamat datang di layanan media
+                informasi berbasis web Politeknik Bhakti Kartini Bekasi. Melalui media informasi ini, saya berharap Politeknik Bhakti Kartini dapat memberikan informasi
+                Global sesuai perkembangan teknologi dalam dunia pendidikan. Selain itu diharapkan bahwa layanan ini dapat menjadi pintu gerbang (portal) dan penyedia
+                informasi yang dapat mengakses secara akurat, relevan dan up-to-date.
+            </p>
+<p>
+                Kemudian, kami berharap bahwa dengan layanan informasi berbasis web ini, Kami dapat memberikan informasi serta wawasan terkini mengenai dunia
+                pendidikan, sehingga pada akhirnya dapat memenuhi kebutuhan informasi bagi semua pihak. Jika saudara/I memiliki kritik dan masukan terhadap informasi
+                yang kami tampilkan, maka tim kami selalu terbuka untuk mendengar suara dan opini saudara/I.
+            </p>
+<p>
+                Demikianlah yang dapat saya sampaikan. Kepada seluruh pengguna teknologi informasi yang telah mengunjungi website ini, kami ucapkan terima kasih.
+            </p>
+<p>
+                Wassalamualaikum, Wr. Wb.
+            </p>
+<h4>Ibu Yusnita Yusfik, S.KM., M.KM.</h4>
+</div>
+</div>
+</section>
+ ================= VISI MISI ================= 
+<section class="visi-misi">
+<div class="container">
+<div class="section-header">
+<span>Visi &amp; Misi</span>
+<h2>Membangun Generasi Profesional</h2>
+</div>
+<div class="vm-grid">
+<div class="vm-card">
+<i class="fas fa-eye"></i>
+<h3>Visi</h3>
+<p>
+                    Menjadi perguruan tinggi vokasi yang unggul, profesional,
+                    inovatif, dan mampu bersaing di tingkat nasional maupun internasional.
+                </p>
+</div>
+<div class="vm-card">
+<i class="fas fa-bullseye"></i>
+<h3>Misi</h3>
+<ul>
+<li>Menyelenggarakan pendidikan vokasi berkualitas.</li>
+<li>Meningkatkan penelitian terapan.</li>
+<li>Mengembangkan pengabdian kepada masyarakat.</li>
+<li>Membangun kerja sama dengan dunia industri.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+ ================= PROGRAM STUDI ================= 
+<section class="prodi">
+<div class="container">
+<div class="section-header">
+<span>Program Studi</span>
+<h2>Pilih Program Studi Favoritmu</h2>
+</div>
+<div class="prodi-grid">
+<div class="prodi-card">
+<i class="fas fa-pills"></i>
+<h3>D3 Farmasi</h3>
+<p>Mencetak tenaga farmasi profesional yang siap bekerja di rumah sakit, apotek, dan industri farmasi.</p>
+<a href="/politeknikbhaktikartini/Programstudi/farmasi.html">Selengkapnya</a>
+</div>
+<div class="prodi-card">
+<i class="fas fa-hospital-user"></i>
+<h3>D3 Administrasi Rumah Sakit</h3>
+<p>Menghasilkan tenaga administrasi rumah sakit yang profesional dan kompeten.</p>
+<a href="/politeknikbhaktikartini/Programstudi/ars.html">Selengkapnya</a>
+</div>
+<div class="prodi-card">
+<i class="fas fa-truck-fast"></i>
+<h3>D3 Manajemen Logistik</h3>
+<p>Mempelajari pengelolaan distribusi barang dan supply chain berbasis teknologi.</p>
+<a href="/politeknikbhaktikartini/Programstudi/logistik.html">Selengkapnya</a>
+</div>
+<div class="prodi-card">
+<i class="fas fa-photo-film"></i>
+<h3>D4 Teknologi Rekayasa Multimedia</h3>
+<p>Berfokus pada desain digital, animasi, video, UI/UX, dan pengembangan multimedia.</p>
+<a href="/politeknikbhaktikartini/Programstudi/trm.html">Selengkapnya</a>
+</div>
+</div>
+</div>
+</section>
+ ================= KEUNGGULAN ================= 
+<section class="keunggulan">
+<div class="container">
+<div class="section-header">
+<span>Keunggulan</span>
+<h2>Mengapa Memilih Kami?</h2>
+</div>
+<div class="unggulan-grid">
+<div class="unggulan-card">
+<i class="fas fa-user-tie"></i>
+<h3>Dosen Profesional</h3>
+<p>Dibimbing dosen berpengalaman dan praktisi industri.</p>
+</div>
+<div class="unggulan-card">
+<i class="fas fa-microchip"></i>
+<h3>Teknologi Modern</h3>
+<p>Didukung laboratorium dan fasilitas pembelajaran modern.</p>
+</div>
+<div class="unggulan-card">
+<i class="fas fa-briefcase"></i>
+<h3>Magang Industri</h3>
+<p>Mahasiswa memperoleh pengalaman kerja sebelum lulus.</p>
+</div>
+<div class="unggulan-card">
+<i class="fas fa-award"></i>
+<h3>Sertifikasi</h3>
+<p>Didukung program sertifikasi kompetensi sesuai bidang.</p>
+</div>
+<div class="unggulan-card">
+<i class="fas fa-handshake"></i>
+<h3>Mitra Industri</h3>
+<p>Bekerja sama dengan berbagai perusahaan dan instansi.</p>
+</div>
+<div class="unggulan-card">
+<i class="fas fa-graduation-cap"></i>
+<h3>Lulusan Siap Kerja</h3>
+<p>Berorientasi pada kompetensi dan kebutuhan dunia kerja.</p>
+</div>
+</div>
+</div>
+</section>
+ ================= SEJARAH ================= 
+<section class="history">
+<div class="container">
+<div class="section-header">
+<span>Sejarah Kampus</span>
+<h2>Perjalanan Politeknik Bhakti Kartini</h2>
+</div>
+<div class="history-grid">
+<div class="history-card">
+<span>2020</span>
+<h3>Pendirian Kampus</h3>
+<p>Resmi berdiri sebagai perguruan tinggi vokasi di bawah Yayasan Amal Bhakti.</p>
+</div>
+<div class="history-card">
+<span>2021</span>
+<h3>Pengembangan Program Studi</h3>
+<p>Membuka beberapa program studi yang sesuai dengan kebutuhan industri.</p>
+</div>
+<div class="history-card">
+<span>2023</span>
+<h3>Digitalisasi Kampus</h3>
+<p>Mengembangkan layanan akademik dan pembelajaran berbasis teknologi.</p>
+</div>
+<div class="history-card">
+<span>2025</span>
+<h3>Kerja Sama Industri</h3>
+<p>Memperluas kerja sama dengan dunia usaha dan dunia industri.</p>
+</div>
+</div>
+</div>
+</section>
+ ================= AKREDITASI ================= 
+<section class="akreditasi">
+<div class="container">
+<div class="section-header">
+<span>Akreditasi</span>
+<h2>Mutu Pendidikan Terjamin</h2>
+</div>
+<div class="akreditasi-box">
+<i class="fas fa-award"></i>
+<h2>TERAKREDITASI</h2>
+<span class="nilai">B</span>
+<p>
+                Politeknik Bhakti Kartini terus meningkatkan kualitas pendidikan,
+                sumber daya manusia, dan fasilitas pembelajaran sesuai standar nasional.
+            </p>
+</div>
+</div>
+</section>
+ ================= FASILITAS ================= 
+<section class="fasilitas">
+<div class="container">
+<div class="section-header">
+<span>Fasilitas Kampus</span>
+<h2>Fasilitas Modern</h2>
+</div>
+<div class="fasilitas-grid">
+<div class="fasilitas-card">
+<i class="fas fa-laptop-code"></i>
+<h3>Lab Komputer</h3>
+</div>
+<div class="fasilitas-card">
+<i class="fas fa-flask"></i>
+<h3>Lab Farmasi</h3>
+</div>
+<div class="fasilitas-card">
+<i class="fas fa-book-open"></i>
+<h3>Perpustakaan</h3>
+</div>
+<div class="fasilitas-card">
+<i class="fas fa-wifi"></i>
+<h3>WiFi Kampus</h3>
+</div>
+<div class="fasilitas-card">
+<i class="fas fa-chalkboard"></i>
+<h3>Smart Classroom</h3>
+</div>
+<div class="fasilitas-card">
+<i class="fas fa-building"></i>
+<h3>Gedung Modern</h3>
+</div>
+</div>
+</div>
+</section>
+ ================= GALERI ================= 
+<section class="gallery">
+<div class="container">
+<div class="section-header">
+<span>Galeri Kampus</span>
+<h2>Suasana Perkuliahan</h2>
+</div>
+<div class="gallery-grid">
+<img alt="" src="/politeknikbhaktikartini/assets/img/galerikampus/01.jpeg"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/galerikampus/02.jpeg"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/galerikampus/03.jpg"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/galerikampus/04.jfif"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/galerikampus/05.jpg"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/galerikampus/06.jpg"/>
+</div>
+</div>
+</section>
+ ================= MITRA ================= 
+<section class="partner">
+<div class="container">
+<div class="section-header">
+<span>Mitra Industri</span>
+<h2>Kerja Sama</h2>
+</div>
+<div class="partner-grid">
+<img alt="" src="/politeknikbhaktikartini/assets/img/kerjasama/bnsp.jfif"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/kerjasama/Apotekk24.png"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/kerjasama/rsarafiq.png"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/kerjasama/alfatah.jfif"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/kerjasama/rsbtg.jfif"/>
+<img alt="" src="/politeknikbhaktikartini/assets/img/kerjasama/kartinihospital.png"/>
+</div>
+</div>
+</section>
+ ================= TESTIMONI ================= 
+<section class="testimonial">
+<div class="container">
+<div class="section-header">
+<span>Testimoni Alumni</span>
+<h2>Apa Kata Alumni?</h2>
+</div>
+<div class="testimonial-grid">
+<div class="testimonial-card">
+<p>"Pembelajaran sangat baik dan sesuai kebutuhan dunia kerja."</p>
+<h4>Andi Saputra</h4>
+<span>Alumni Farmasi</span>
+</div>
+<div class="testimonial-card">
+<p>"Dosen ramah, fasilitas lengkap, dan peluang kerja sangat luas."</p>
+<h4>Siti Rahma</h4>
+<span>Alumni ARS</span>
+</div>
+<div class="testimonial-card">
+<p>"Saya langsung diterima bekerja setelah lulus."</p>
+<h4>Dimas Pratama</h4>
+<span>Alumni Logistik</span>
+</div>
+</div>
+</div>
+</section>
+ ================= CTA ================= 
+<section class="cta">
+<div class="container">
+<h2>Bergabung Bersama Politeknik Bhakti Kartini</h2>
+<p>Wujudkan masa depan yang lebih baik bersama pendidikan vokasi berkualitas.</p>
+<a class="btn btn-primary" href="/politeknikbhaktikartini/kontak.html">
+            Daftar Sekarang
+        </a>
+</div>
+</section>
+<footer class="footer">
+<div class="container footer-flex">
+<div class="footer-left">
+<h3>Politeknik Bhakti Kartini</h3>
+<p>Membangun generasi unggul berbasis teknologi dan karakter.</p>
+<p>@derryaprnsyh_ </p>
+</div>
+<div class="footer-center">
+<p>2026 Politeknik Bhakti Kartini</p>
+</div>
+<div class="footer-right">
+<div class="social">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</footer>
+<script src="/politeknikbhaktikartini/assets/js/static.js"></script>
+</body>
+</html>
